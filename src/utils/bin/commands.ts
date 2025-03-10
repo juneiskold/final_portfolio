@@ -140,18 +140,16 @@ export const sudo = async (args?: string[]): Promise<string> => {
 
 // Banner
 export const banner = (args?: string[]): string => {
-  return `
-█████        ███                       ███████████                                   
-░░███        ░░░                       ░█░░░███░░░█                                   
- ░███        ████  █████ █████  ██████ ░   ░███  ░   ██████  ████████  █████████████  
- ░███       ░░███ ░░███ ░░███  ███░░███    ░███     ███░░███░░███░░███░░███░░███░░███ 
- ░███        ░███  ░███  ░███ ░███████     ░███    ░███████  ░███ ░░░  ░███ ░███ ░███ 
- ░███      █ ░███  ░░███ ███  ░███░░░      ░███    ░███░░░   ░███      ░███ ░███ ░███ 
- ███████████ █████  ░░█████   ░░██████     █████   ░░██████  █████     █████░███ █████
-░░░░░░░░░░░ ░░░░░    ░░░░░     ░░░░░░     ░░░░░     ░░░░░░  ░░░░░     ░░░░░ ░░░ ░░░░░ 
+  return ` Type 'help' to see the list of available commands. Type 'sumfetch' to display summary. Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository. 
 
-Type 'help' to see the list of available commands.
-Type 'sumfetch' to display summary.
-Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
-`;
+_______        ,-----.     ,---.   .--.     ,-----.       .---.          ,-----.     
+\\  ____  \\    .'  .-,  '.   |    \\  |  |   .'  .-,  '.     | ,_|        .'  .-,  '.   
+| |    \\ |   / ,-.|  \\ * \\  |  ,  \\ |  |  / ,-.|  \\ * \\  ,-./  )       / ,-.|  \\ _ \\  
+| |____/ /  ;  \\  '_ /  | : |  |\\_ \\|  | ;  \\  '_ /  | : \\  '_ '\\)    ;  \\  '_ /  | : 
+|   * *'.  |  \\,/ \\ /  | |  ( )\\  | |  \\*,/ \\ */  |  > (_)  )    |  *\\,/ \\ */  | 
+|  ( ' )  \\ : (  '\\_/ \\   ; | (_ o *)  | : (  '\\*/ \\   ; (  .  .-'    : (  '\\_/ \\   ; 
+| (_{;}_) |  \\ \\"/  \\  ) /  |  (_,_)\\  |  \\ \\"/  \\  ) /   \\-'\\-'|___   \\ \\"/  \\  ) /  
+|  (_,_)  /   '. \\_/\\"\.'   |  |    |  |   '. \\_/\\"\.'     |        \\   '. \\_/\\"\.'   
+/_______.'      '-----'     '--'    '--'     '-----'       \\--------\\     '-----'
+`; 
 };
